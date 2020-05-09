@@ -1,0 +1,418 @@
+{% extends 'layouts.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+
+
+			<!-- ============================ Hero Banner  Start================================== -->
+			<div class="featured-slick">
+				<div class="featured-slick-slide">
+                    {% for p in photos %}
+					<div><a href="{{p.image.url}}" class="mfp-gallery"><img src="{{p.image.url}}" class="img-fluid mx-auto" alt="" /></a></div>
+				    {% endfor %}
+                </div>
+			</div>
+
+			<section class="spd-wrap">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-12 col-md-12">
+
+							<div class="slide-property-detail">
+
+								<div class="slide-property-first">
+									<div class="pr-price-into">
+										<h2>100 million <span class="prt-type rent">For Sale</span></h2>
+										<span><i class="lni-map-marker"></i> Okuru new layout of odili rd</span>
+									</div>
+								</div>
+
+								<div class="slide-property-sec">
+									<div class="pr-all-info">
+
+										<div class="pr-single-info">
+											<div class="share-opt-wrap">
+												<button type="button" class="btn-share" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-original-title="Share this">
+													<i class="lni-share"></i>
+												</button>
+												<div class="dropdown-menu animated flipInX">
+													<a href="#" class="cl-facebook"><i class="lni-facebook"></i></a>
+													<a href="#" class="cl-twitter"><i class="lni-twitter"></i></a>
+													<a href="#" class="cl-gplus"><i class="lni-google-plus"></i></a>
+													<a href="#" class="cl-instagram"><i class="lni-instagram"></i></a>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Hero Banner End ================================== -->
+
+			<!-- ============================ Property Detail Start ================================== -->
+			<section class="gray">
+				<div class="container">
+					<div class="row">
+
+						<!-- property main detail -->
+						<div class="col-lg-8 col-md-12 col-sm-12">
+
+							<!-- Single Block Wrap -->
+							<div class="block-wrap">
+
+								<div class="block-header">
+									<h4 class="block-title">Property Info</h4>
+								</div>
+
+								<div class="block-body">
+									<ul class="dw-proprty-info">
+										<li><strong>Bedrooms</strong>4</li>
+										<li><strong>Bathrooms</strong>4</li>
+										<li><strong>Garage</strong>Yes</li>
+										<li><strong>Area</strong>1,580 sq ft</li>
+										<li><strong>Type</strong>Corporate</li>
+										<li><strong>Price</strong>100 million</li>
+										<li><strong>City</strong>Port Harcourt</li>
+										<!-- <li><strong>Build On</strong>2007</li> -->
+									</ul>
+								</div>
+
+							</div>
+
+							<!-- Single Block Wrap -->
+							<div class="block-wrap">
+
+								<div class="block-header">
+									<h4 class="block-title">Description</h4>
+								</div>
+
+								<div class="block-body">
+									<p>Twin estate Built for your  comfort with functioning indoor ammeneties and so much more.</p>
+								</div>
+
+							</div>
+
+							<!-- Single Block Wrap -->
+							<div class="block-wrap">
+
+								<div class="block-header">
+									<h4 class="block-title">Ameneties</h4>
+								</div>
+
+								<div class="block-body">
+									<ul class="avl-features third">
+										<li>Air Conditioning</li>
+										<!-- <li>Swimming Pool</li> -->
+										<li>Kitchen</li>
+										<li>Laundry Room</li>
+										<!-- <li>Gym</li> -->
+										<li>Alarm</li>
+										<li>Window Covering</li>
+										<!-- <li>Internet</li> -->
+										<li>Pets Allow</li>
+										<!-- <li>Free WiFi</li> -->
+										<li>Car Parking</li>
+										<!-- <li>Spa & Massage</li> -->
+									</ul>
+								</div>
+
+							</div>
+
+							<!-- Single Block Wrap -->
+							<div class="block-wrap">
+
+								<div class="block-header">
+									<h4 class="block-title">Floor Plan</h4>
+								</div>
+
+								<div class="block-body">
+									<div class="accordion" id="floor-option">
+										<div class="card">
+											<div class="card-header" id="firstFloor">
+												<h2 class="mb-0">
+													<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#firstfloor">First Floor<span>740 sq ft</span></button>
+												</h2>
+											</div>
+											<div id="firstfloor" class="collapse" aria-labelledby="firstFloor" data-parent="#floor-option">
+												<div class="card-body">
+													<img src="assets/img/floor.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<!-- <div class="card-header" id="seconfFloor">
+												<h2 class="mb-0">
+													<button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#secondfloor">Second Floor<span>710 sq ft</span></button>
+												</h2>
+											</div> -->
+											<div id="secondfloor" class="collapse" aria-labelledby="seconfFloor" data-parent="#floor-option">
+												<div class="card-body">
+													<img src="assets/img/floor.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="third-garage">
+												<h2 class="mb-0">
+													<button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#garages">Garage<span>520 sq ft</span></button>
+												</h2>
+											</div>
+											<div id="garages" class="collapse" aria-labelledby="third-garage" data-parent="#floor-option">
+												<div class="card-body">
+													<img src="assets/img/floor.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Single Block Wrap -->
+							<div class="block-wrap">
+
+								<div class="block-header">
+									<h4 class="block-title">Location</h4>
+								</div>
+
+								<div class="block-body">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15903.52109461792!2d7.042680069826515!3d4.7905848771695405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOkuru%20new%20layout%20odili!5e0!3m2!1sen!2sng!4v1582759667063!5m2!1sen!2sng" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+						<!-- property Sidebar -->
+						<div class="col-lg-4 col-md-12 col-sm-12">
+							<div class="page-sidebar">
+
+								<!-- Agent Detail -->
+								<div class="agent-widget">
+									<div class="agent-title">
+										<div class="agent-photo"><img src="#" alt=""></div>
+										<div class="agent-details">
+											<h4><a href="#">Festus</a></h4>
+											<span><i class="lni-phone-handset"></i>+2348118722574</span>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Your Email">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Your Phone">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control">I'm interested in this property.</textarea>
+									</div>
+									<button class="btn btn-theme full-width">Send Message</button>
+								</div>
+
+
+								<!-- Featured Property -->
+								<div class="sidebar-widgets">
+
+									<h4>Featured Property</h4>
+
+									<div class="sidebar-property-slide">
+
+										<!-- Single Property -->
+										<div class="single-items">
+											<div class="property-listing property-1">
+
+												<div class="listing-img-wrapper">
+													<a href="twin_est.php">
+														<img src="assets/img/real.jpg" class="img-fluid mx-auto" alt="" />
+													</a>
+													<div class="listing-like-top">
+														<i class="ti-heart"></i>
+													</div>
+													<div class="listing-rating">
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star"></i>
+													</div>
+													<span class="property-type">For Sale</span>
+												</div>
+
+												<div class="listing-content">
+
+													<div class="listing-detail-wrapper">
+														<div class="listing-short-detail">
+															<h4 class="listing-name"><a href="single-property-2.html">Twin</a></h4>
+															<span class="listing-location"><i class="ti-location-pin"></i> Okuru new layout of odili rd</span>
+														</div>
+														<div class="list-author">
+															<a href="#"><img src="assets/img/add-user.png" class="img-fluid img-circle avater-30" alt=""></a>
+														</div>
+													</div>
+
+													<div class="listing-features-info">
+														<ul>
+															<li><strong>Bed:</strong>4</li>
+															<li><strong>Bath:</strong>4</li>
+															<li><strong>Sqft:</strong>1,580</li>
+														</ul>
+													</div>
+
+													<div class="listing-footer-wrapper">
+														<div class="listing-price">
+															<h4 class="list-pr">100 million</h4>
+														</div>
+														<div class="listing-detail-btn">
+															<a href="single-property-2.html" class="more-btn">More Info</a>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+										<!-- Single Property -->
+										<div class="single-items">
+											<div class="property-listing property-1">
+
+												<div class="listing-img-wrapper">
+													<a href="deed.php">
+														<img src="assets/img/2.jpg" class="img-fluid mx-auto" alt="" />
+													</a>
+													<div class="listing-like-top">
+														<i class="ti-heart"></i>
+													</div>
+													<div class="listing-rating">
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star"></i>
+													</div>
+													<span class="property-type">For Sale</span>
+												</div>
+
+												<div class="listing-content">
+
+													<div class="listing-detail-wrapper">
+														<div class="listing-short-detail">
+															<h4 class="listing-name"><a href="deed.php">Deed of Conveyance</a></h4>
+															<span class="listing-location"><i class="ti-location-pin"></i>Eliowhani</span>
+														</div>
+														<div class="list-author">
+															<a href="#"><img src="assets/img/add-user.png" class="img-fluid img-circle avater-30" alt=""></a>
+														</div>
+													</div>
+
+													<div class="listing-features-info">
+														<ul>
+															<li><strong>Bed:</strong>4</li>
+															<li><strong>Bath:</strong>4</li>
+															<li><strong>Sqft:</strong>1,180</li>
+														</ul>
+													</div>
+
+													<div class="listing-footer-wrapper">
+														<div class="listing-price">
+															<h4 class="list-pr">23 million</h4>
+														</div>
+														<div class="listing-detail-btn">
+															<a href="single-property-2.html" class="more-btn">More Info</a>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+										<!-- Single Property -->
+										<div class="single-items">
+											<div class="property-listing property-1">
+
+												<div class="listing-img-wrapper">
+													<a href="owl">
+														<img src="assets/img/3.jpg" class="img-fluid mx-auto" alt="" />
+													</a>
+													<div class="listing-like-top">
+														<i class="ti-heart"></i>
+													</div>
+													<div class="listing-rating">
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star filled"></i>
+														<i class="ti-star"></i>
+													</div>
+													<span class="property-type">For Sale</span>
+												</div>
+
+												<div class="listing-content">
+
+													<div class="listing-detail-wrapper">
+														<div class="listing-short-detail">
+															<h4 class="listing-name"><a href="owl.php">Owl Lio Apartment </a></h4>
+															<span class="listing-location"><i class="ti-location-pin"></i>Odili Road</span>
+														</div>
+														<div class="list-author">
+															<a href="#"><img src="assets/img/add-user.png" class="img-fluid img-circle avater-30" alt=""></a>
+														</div>
+													</div>
+
+													<div class="listing-features-info">
+														<ul>
+															<li><strong>Bed:</strong>4</li>
+															<li><strong>Bath:</strong>4</li>
+															<li><strong>Sqft:</strong>1,580</li>
+														</ul>
+													</div>
+
+													<div class="listing-footer-wrapper">
+														<div class="listing-price">
+															<h4 class="list-pr">50 million</h4>
+														</div>
+														<div class="listing-detail-btn">
+															<a href="single-property-2.html" class="more-btn">More Info</a>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Property Detail End ================================== -->
+
+			<!-- ============================ Footer Start ================================== -->
+
+{% endblock %}
